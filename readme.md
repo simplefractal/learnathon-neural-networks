@@ -1,9 +1,12 @@
 ## Introduction to Neural Networks
 
+![machine-learning-logo](https://www.recordedfuture.com/assets/machine-learning-cybersecurity-applications.png)
+
 1. What is Machine Learning?
 
 	* Machine learning is a subset of artificial intelligence in the field of 	  
   computer science that often uses statistical techniques to give computers the ability to "learn" (i.e., progressively improve performance on a specific task) with data, without being explicitly programmed.
+	
 2. What is an Artificial Neural Network aka ANN?
 
 	* Artificial Neural Networks are created as a means of doing machine Learning
