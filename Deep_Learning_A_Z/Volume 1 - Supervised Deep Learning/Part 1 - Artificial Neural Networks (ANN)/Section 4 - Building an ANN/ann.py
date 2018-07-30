@@ -41,7 +41,7 @@ sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
-# Part 2 - Now let's make the ANN!
+# Part 2 - Building the ANN
 
 # Importing the Keras libraries and packages
 import keras
@@ -72,7 +72,7 @@ classifier.add(Dense(units=1, kernel_initializer="uniform", activation="sigmoid"
 classifier.compile(optimizer="adam", loss="binary_crossentropy", metrics=['accuracy'])
 
 # fit ANN to training set
-# fit ANN with training sets - matrix of features, then dependent variable vector
+# pass in arguments - matrix of features, then dependent variable vector
 # no rule of thumb to choose batch_size and # of epochs
 classifier.fit(X_train, y_train, batch_size=10, nb_epoch=100)
 
