@@ -1,10 +1,12 @@
 ## Introduction to Neural Networks
 
 1. What is Machine Learning?
-  * Machine learning is a subset of artificial intelligence in the field of 	  
+
+	* Machine learning is a subset of artificial intelligence in the field of 	  
   computer science that often uses statistical techniques to give computers the ability to "learn" (i.e., progressively improve performance on a specific task) with data, without being explicitly programmed.
 2. What is an Artificial Neural Network aka ANN?
-  * Artificial Neural Networks are created as a means of doing machine Learning
+
+	* Artificial Neural Networks are created as a means of doing machine Learning
 	in which a computer learns to perform some task by analyzing training examples, or datasets. It is modeled loosely on the human brain, where a neural net consists of thousands or millions of simple processing nodes that are densely interconnected.
 
 ## DEEP LEARNING
@@ -26,13 +28,13 @@
 
 ## LAYERS
 
-		INPUT
-		HIDDEN
-		OUTPUT
-		input layers hit the hidden layers(billions of nodes) which then gets sent to output
-		input values are processed via hidden layers then get to output
+		* INPUT
+		* HIDDEN
+		* OUTPUT
+		* input layers hit the hidden layers(billions of nodes) which then gets sent to output
+		* input values are processed via hidden layers then get to output
 
-		ARTIFICIAL NEURAL NETWORK
+## ARTIFICIAL NEURAL NETWORK
 
 		3 input values
 		x1, x2, xm
