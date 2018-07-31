@@ -121,6 +121,13 @@ a basic neural network consists of three or more layers
 
 ## PRACTICAL EXPERIMENT
 
+For this experiment I used Spyder which is a great IDE for machine learning. Also needed the following packages:
+* pandas
+* numpy
+* matplotlib
+* keras
+* scikit
+
 Objective - to build an Artificial Neural Network
 
 Problem - the bank has given us 10,000 lines of data that trains on bank customer data which includes the features below as well as whether or not the customer has left the bank. In order to to best serve the bank we will build an ANN to predict probability of a customer leaving the bank based on the features given:
@@ -134,12 +141,13 @@ Problem - the bank has given us 10,000 lines of data that trains on bank custome
 * active
 * estimated salary
 
-For this experiment I used Spyder which is a great IDE for machine learning. Also needed the following packages:
-* pandas
-* numpy
-* matplotlib
-* keras
-* scikit
+![data](/screenshots/data.png)
+
+This data must be scaled to comparable numbers (between -1 and 1)
+
+![scaled](/screenshots/scaled.png)
+
+
 
 ```
 # Artificial Neural Network
