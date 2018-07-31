@@ -4,13 +4,11 @@
 
 1. What is Machine Learning?
 
-	Machine learning is a subset of artificial intelligence in the field of 	  
-	computer science that often uses statistical techniques to give computers the ability to "learn" (i.e., progressively improve performance on a specific task) with data, without being explicitly programmed.
+	Machine learning is a subset of artificial intelligence in the field of computer science that often uses statistical techniques to give computers the ability to "learn" (i.e., progressively improve performance on a specific task) with data, without being explicitly programmed.
 
 2. What is an Artificial Neural Network aka ANN?
 
-	Artificial Neural Networks are created as a means of doing machine Learning
-	in which a computer learns to perform some task by analyzing training examples, or datasets. It is modeled loosely on the human brain, where a neural net consists of thousands or millions of simple processing nodes that are densely interconnected.
+	Artificial Neural Networks are created as a means of doing machine Learning in which a computer learns to perform some task by analyzing training examples, or datasets. It is modeled loosely on the human brain, where a neural net consists of thousands or millions of simple processing nodes that are densely interconnected.
 
 ## NEURAL NETWORK FACTS
 
@@ -31,7 +29,9 @@
 
 ## LAYERS
 
-* a basic neural network consists of three layers
+a basic neural network consists of three or more layers
+
+![layers](https://icdn5.digitaltrends.com/image/artificial_neural_network_1-791x388.jpg)
 
 	* INPUT layer
 	* HIDDEN layer(s)
@@ -77,6 +77,7 @@
 	- to be determined as dog, look for sloppy ears, drool, barking
 
 ## CREATING A NEURAL NETWORK
+
 * create a facility for program to understand what to do on its own
 * code the program to train itself what a dog or cat is and it will determine on its own
 * these are two fundamentally different approaches
@@ -120,7 +121,9 @@
 
 ## PRACTICAL EXPERIMENT
 
-Objective - to build an Artificial Neural Network that trains on bank customer data to predict probability of a customer leaving the bank based on the following features
+Objective - to build an Artificial Neural Network
+
+Problem - the bank has given us 10,000 lines of data that trains on bank customer data which includes the features below as well as whether or not the customer has left the bank. In order to to best serve the bank we will build an ANN to predict probability of a customer leaving the bank based on the features given:
 * credit score
 * geography
 * age
@@ -228,4 +231,5 @@ from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 ```
 
-Result - 86% accuracy on test set after training
+## RESULT
+After feeding 8000 lines of training data to the network, we used 2000 lines to test. The program hit an accuracy of 86% in predicting whether a customer will exit the bank or not! Very cool!
