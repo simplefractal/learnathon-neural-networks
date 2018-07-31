@@ -42,33 +42,30 @@
 
 ## ARTIFICIAL NEURAL NETWORK
 
-		3 input values
-		x1, x2, xm
-		goes through neuron node
-		y output value produce
-		each input value has weights
-		neuron has an activation function, which is applied to the weighted sum of the inputs
-		then the neuron passes on the signal to the next neuron
+* 3 input values
+* x1, x2, xm
+* goes through neuron node
+* y output value produce
+* each input value has weights
+* neuron has an activation function, which is applied to the weighted sum of the inputs
+* then the neuron passes on the signal to the next neuron
 
-		ACTIVATION FUNCTIONS
+## ACTIVATION FUNCTIONS
 
-		popular functions
-		threshold
-		sigmoid
-		rectifier - one of the most used
-		hyperbolic tangent(tanh)
-		QUESTION - if your output will be binary, which activation function would you use?
-		a threshold activation function
-		a sigmoid activation function
+* popular functions
+	- threshold
+	- sigmoid
+	- rectifier - one of the most used
+	- hyperbolic tangent(tanh)
 
 ## EXAMPLE OF A NEURAL NETWORK
 
-		BASIC CASE - determine price of a house
-		x1 = Area(ft^2)
-		x2 = Bedrooms
-		x3  = Distance to city(miles)
-		x4 = Age
-		PRICE =  w1 * x1 + w2 * x2 + w3 * x3 + w4 * x4
+* BASIC CASE - determine price of a house
+	- x1 = Area(ft^2)
+	- x2 = Bedrooms
+	- x3  = Distance to city(miles)
+	- x4 = Age
+	- PRICE =  w1 * x1 + w2 * x2 + w3 * x3 + w4 * x4
 		one particular node(neuron in hidden layer) might only care about two parameters like area or distance to city
 		another node(neuron in hidden layer) might care about three other parameters
 
@@ -80,21 +77,23 @@
 	- to be determined as dog, look for sloppy ears, drool, barking
 
 ## CREATING A NEURAL NETWORK
-	* create a facility for program to understand what to do on its own
-	* code the program to train itself what a dog or cat is and it will determine on its own
-	* these are two fundamentally different approaches
-	* back propagation***
-		in order for neural network to learn this must happen - when summation of y hat - y values squared is back propagated through neural network and then weights are adjusted accordingly
+* create a facility for program to understand what to do on its own
+* code the program to train itself what a dog or cat is and it will determine on its own
+* these are two fundamentally different approaches
+* back propagation -
+	in order for neural network to learn this must happen - when summation of y hat - y values squared is back propagated through neural network and then weights are adjusted accordingly
 
 ## GRADIENT DESCENT
 
-		cost function -> C = 1/2(y^ - y)^2
-		brute forcing into doing millions of combinations to adjust weights in neural network is not efficient at all and cannot be done with more complex networks so…we have gradient descent method
-		best way to figure out weights while minimizing cost function
-		go from solving a problem in 10^57 years to minutes or hours
-		TWO types of gradient descent
-		batch gradient descent - pass entire data set through network and adjust weight, deterministic algorithm
-		stochastic gradient descent - pass each row of data set through network and adjust weight, helps produce better output, actually faster as well because it does not have to load up all data into memory(lighter algo), random algorithm vs batch
+* brute forcing into doing millions of combinations to adjust weights in neural network is not efficient at all and cannot be done with more complex networks so…we have gradient descent method
+
+* best way to figure out weights while minimizing cost function
+
+* go from solving a problem in 10^57 years to minutes or hours
+
+* two types of gradient descent
+	- batch gradient descent - pass entire data set through network and adjust weight, deterministic algorithm
+	- stochastic gradient descent - pass each row of data set through network and adjust weight, helps produce better output, actually faster as well because it does not have to load up all data into memory(lighter algo), random algorithm vs batch
 
 ## STEPS TO TRAINING A.N.N. WITH STOCHASTIC GRADIENT
 
