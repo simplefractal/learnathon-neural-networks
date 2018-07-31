@@ -8,7 +8,7 @@
 
 2. What is an Artificial Neural Network aka ANN?
 
-	Artificial Neural Networks are created as a means of doing machine Learning in which a computer learns to perform some task by analyzing training examples, or datasets. It is modeled loosely on the human brain, where a neural net consists of thousands or millions of simple processing nodes that are densely interconnected.
+	Artificial Neural Networks are created as a means of doing machine learning in which a computer learns to perform some task by analyzing training examples, or datasets. It is modeled loosely on the human brain, where a neural net consists of thousands or millions of simple processing nodes that are densely interconnected.
 
 ## NEURAL NETWORK FACTS
 
@@ -27,6 +27,13 @@
 * Geoffrey Hinton is godfather of deeplearning
 * we wanna be able to mimic the human brain(most powerful for learning)
 
+## HOW DO NEURAL NETWORKS LEARN
+
+* can learn using hard coded conditions
+* for machine to determine between a cat and dog consider the following
+- to be determined as cat, look for whiskers, look for certain shape, look for pointy ears
+- to be determined as dog, look for sloppy ears, drool, barking
+
 ## LAYERS
 
 a basic neural network consists of three or more layers
@@ -37,8 +44,9 @@ a basic neural network consists of three or more layers
 	* HIDDEN layer(s)
 	* OUTPUT layer
 
-* input layers hit the hidden layers(billions of nodes) which then gets sent to output
-* input values are processed via hidden layers then get to output
+* input layers hit the hidden layers(many many nodes) which then gets sent to output
+* input values are processed via hidden layers and their activation functions, then get go to output
+
 
 ## ARTIFICIAL NEURAL NETWORK
 
@@ -52,7 +60,7 @@ a basic neural network consists of three or more layers
 
 ## ACTIVATION FUNCTIONS
 
-* popular functions
+* each node in the hidden layer has an activation function - here are some popular functions
 	- threshold
 	- sigmoid
 	- rectifier - one of the most used
@@ -69,12 +77,6 @@ a basic neural network consists of three or more layers
 		one particular node(neuron in hidden layer) might only care about two parameters like area or distance to city
 		another node(neuron in hidden layer) might care about three other parameters
 
-## HOW DO NEURAL NETWORKS LEARN
-
-* can learn using hard coded conditions
-* for machine to determine between a cat and dog consider the following
-	- to be determined as cat, look for whiskers, look for certain shape, look for pointy ears
-	- to be determined as dog, look for sloppy ears, drool, barking
 
 ## CREATING A NEURAL NETWORK
 
@@ -84,11 +86,23 @@ a basic neural network consists of three or more layers
 * back propagation -
 	in order for neural network to learn this must happen - when summation of y hat - y values squared is back propagated through neural network and then weights are adjusted accordingly
 
+## LINEAR REGRESSION MODEL
+
+* in simple linear regression an independent variable is used to predict a dependent variable
+
+* we use this model in artificial neural networks
+
 ## GRADIENT DESCENT
 
-* brute forcing doing millions of combinations to adjust weights in neural network is not efficient at all and cannot be done with more complex networks so we have the gradient descent method
+* brute forcing doing millions of combinations to adjust weights in neural network is not efficient at all and cannot be done with more complex networks so in neural networks the gradient descent algorithm is used
+
+* is just one way to learn the weight coefficients of a linear regression model
+
+* optimization algorithm where weights are updated incrementally after each epoch(pass over training dataset)
 
 * best way to figure out weights while minimizing cost function
+
+* object - the cost function(something like the sum of squared errors or SSE) must be minimized which will then increase accuracy of prediction
 
 * go from solving a problem in 10^57 years to minutes or hours
 
@@ -143,7 +157,7 @@ Problem - the bank has given us 10,000 lines of data that trains on bank custome
 
 ![data](/screenshots/data.png)
 
-This data must be scaled to comparable numbers (between -1 and 1)
+This data must first be encoded, since our program will only understand numbers and scaled or normalized to comparable numbers (between -1 and 1) so that their magnitudes are relatively similar.
 
 ![scaled](/screenshots/scaled.png)
 
