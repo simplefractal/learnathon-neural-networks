@@ -131,6 +131,13 @@ Objective - to build an Artificial Neural Network that trains on bank customer d
 * active
 * estimated salary
 
+For this experiment I used Spyder which is a great IDE for machine learning. Also needed the following packages:
+* pandas
+* numpy
+* matplotlib
+* keras
+* scikit
+
 ```
 # Artificial Neural Network
 
