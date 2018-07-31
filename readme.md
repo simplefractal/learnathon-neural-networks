@@ -161,7 +161,9 @@ This data must first be encoded, since our program will only understand numbers 
 
 ![scaled](/screenshots/scaled.png)
 
+Here is the IDE that I used - Spyder
 
+![ide](/screenshots/ide.png)
 
 ```
 # Artificial Neural Network
